@@ -1,2 +1,7 @@
 # learning-html5-css3
 Learning HTML and CSS
+
+HTMML: HYPERTEXT MARKUP LANGUAGE
+
+CSS: CASCADING STYLE SHEETS
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal informations</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstName">Fist Name</label>
+                    </td>
+                    <td>
+                        <label for="lastName">Last name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="firstName" />
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="region">Region</label>
+                    </td>
+                    <td>
+                        <label for="birthDate">Data of Birth</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="region">
+                            <option>Select the region</option>
+                            <option>Brazil</option>
+                            <option>Mexico</option>
+                            <option>Panama</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="date" name="birthDate">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Access types</legend>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="radio" name="modo" value="Direct" /> Direct
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <input type="radio" name="accessType" value="basic">Basic</li>
+                            <input type="radio" name="accessType" value="full">Full</li>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" name="modo" value="Indirect"> Indirect
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Documents</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="docs" value="dni" />DNI
+                    </td>
+                    <td>
+                        <input type="checkbox" name="docs" value="passport" />Passport
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
